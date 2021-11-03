@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from "react-router";
+import Login from './pages/Login';
+import Creditbuying from './pages/Creditbuying';
+import Index from './pages/Index';
+import Customerdashboard from './pages/Customerdashboard';
+import Profileview from './pages/Profileview';
+import Profileedit from './pages/Profileedit';
+import Completeproject from './pages/Completeproject';
+import Completesinglepageview from './pages/Completesinglepageview';
+
+
+
+
+
+
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Switch>
+        <Route exact path="/" component={Index}></Route>
+        <Route exact path="/login" component={Login}></Route>  
+        <Route exact path="/credit" component={Creditbuying}></Route> 
+        <Route exact path="/customerdashboard" component={Customerdashboard}></Route>  
+        <Route exact path="/profileview" component={Profileview}></Route>  
+        <Route exact path="/profileedit" component={Profileedit}></Route>  
+        <Route exact path="/completeproject" component={Completeproject}></Route>  
+        <Route exact path="/completesinglepageview" component={Completesinglepageview}></Route>  
+
+
+        <Route  component={Error}></Route>
+      </Switch>
+  </>
+
+    
+  
+   
+  
   );
 }
 
