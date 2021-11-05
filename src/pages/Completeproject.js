@@ -48,7 +48,7 @@ const Completeproject = () => {
   return (
     <>
       <Menu />
-      <section className="">
+      <section className="dashboardTabs">
         <div className="container">
           <div className="d-lg-flex  flex-lg-row  d-sm-flex flex-sm-column">
             <div className="tabsCustomer ">dashboard</div>

@@ -856,7 +856,7 @@ footer li a {
 }
 .profileBox {
   width: 475px;
-  height: 314.5px;
+  height: auto;
   background: #ffffff;
   box-shadow: 0px 3.5px 5.5px rgb(0 0 0 / 7%);
   border-radius: 15px;
@@ -1181,14 +1181,14 @@ footer li a {
   height: auto;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(43, 172, 226, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(43, 172, 226, 0.1));
   border-radius: 5px;
 }
 .messageBox {
   height: auto;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(43, 172, 226, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(43, 172, 226, 0.1));
   border-radius: 5px;
   padding: 20px;
 }
@@ -1270,8 +1270,499 @@ footer li a {
 
 /* complete single page view css end  */
 
-/* media queries  */
+/* profile professional css start  */
+.herobgPro {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 65vh;
+}
+.herobgPosition {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.heroCoverimg {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.blackboxHero {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  height: 80%;
+  width: 30%;
+  background-color: black;
+  padding: 35px;
+  border-radius: 2px;
+}
+.profilePictureName {
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+}
+.probtn {
+  background: #2d408e;
+  border-radius: 5px;
+  padding: 10px 40px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
 
+  text-align: center;
+  transition: all 0.1s ease-in-out;
+  color: #ffffff;
+}
+.probtn:hover {
+  transform: scale(1.1);
+}
+.profileImgPro {
+  width: 80%;
+  height: auto;
+}
+.blackboxH1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+}
+.blackboxPara {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+}
+.showLess {
+  cursor: pointer;
+  color: rgb(78, 189, 189);
+}
+/* profile professional css end  */
+
+/* find professional css start  */
+
+.inputField {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.iconsInput {
+  position: absolute;
+  left: 5%;
+}
+.ZipInput {
+  position: absolute;
+  right: 2%;
+  height: 91%;
+  border-left: 1px solid #dadfe3;
+}
+.zipcodeFeild {
+  padding: 10px;
+  border: none;
+}
+.zipcodeFeild :focus {
+  border: 2px solid #3f61eb !important;
+  box-shadow: none !important;
+}
+.iconcolor {
+  color: #bae0ea;
+  font-size: 17px;
+}
+.inputcus {
+  padding: 11px 35px !important;
+}
+.dropdown-toggle::before {
+  display: inline-block !important;
+  margin-right: 0.255em !important;
+  vertical-align: 0.255em !important;
+  content: "" !important;
+  border-top: 0.3em solid !important;
+  border-right: 0.3em solid transparent !important;
+  border-bottom: 0 !important;
+  border-left: 0.3em solid transparent !important;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+#dropdown-basic {
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+}
+.btnaddProject {
+  background: #5850ec;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  padding: 15px 30px;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+}
+.searchDiv {
+  width: 70%;
+}
+.dropdownDiv {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.listOfh1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 14px;
+  padding: 20px 0;
+  /* or 108% */
+  /* width: 15% !important;
+border-bottom: 1px solid #B6030C ; */
+  color: #b6030c;
+  position: relative;
+}
+.listOfh1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  height: 2px;
+  background: #b6030c;
+
+  /* or 108% */
+  /* width: 15% !important;
+border-bottom: 1px solid #B6030C ; */
+  color: #b6030c;
+}
+.titleCover {
+  font-weight: 600;
+  font-size: 16px;
+  color: #212121;
+}
+.categoryPara {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #212121;
+}
+.categoryPara span {
+  font-weight: normal;
+}
+.aboutH5 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #212121;
+}
+.aboutPara {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #212121;
+}
+.subCatDiv {
+  margin-left: 45px;
+}
+.filterH1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.1px;
+
+  /* text-color */
+
+  color: #252b42;
+}
+.filterDiv {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e6e7e9;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+}
+.searchDivFilter {
+  width: 100%;
+}
+.zipcodeFeildFilter {
+  padding: 10px;
+  border: none;
+  width: 100px;
+  font-size: 12px;
+}
+.inputcusFilter {
+  padding: 11px 35px !important;
+  font-size: 12px !important;
+}
+.skillDiv {
+  border: 1px solid #e6e7e9;
+  padding: 20px;
+}
+.skillH1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.1px;
+
+  /* text-color */
+
+  color: #252b42;
+}
+.skillNum {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.learnmoreBtn {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+  padding: 10px 40px;
+  border: 1px solid #2d408e;
+  letter-spacing: 0.2px;
+  color: #2d408e;
+}
+/* find professional end  */
+
+/* posted project single view css start  */
+
+.boxleftPostedproject {
+  width: 100%;
+}
+.Postedporject-Para {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+
+  color: #000000;
+}
+.Postedporject-Para span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+
+  color: #000000;
+}
+.postedprojectsingleViewpara {
+  max-width: 50%;
+}
+
+/* posted project single view css start ---------------------------------- */
+
+/* post a job css start  */
+.postajobH1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #2d408e;
+}
+.posajobFormdive {
+  padding: 70px;
+  background: rgba(231, 232, 233, 0.2);
+  border-radius: 5px;
+}
+.postjobPara {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #868686;
+}
+.choosefileH1 {
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  font-weight: normal;
+
+  color: #000000;
+}
+[type="file"] {
+  /* Style the color of the message that says 'No file chosen' */
+  color: #4788c7;
+}
+[type="file"]::-webkit-file-upload-button {
+  width: 135.14px;
+  height: 44px;
+  background: #ffffff;
+  color: #e00b0b;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  border: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid #ededed;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+[type="file"]::-webkit-file-upload-button:hover {
+  transform: scale(0.9);
+  box-shadow: 4px 9px 24px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 4px 9px 24px 1px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 4px 9px 24px 1px rgba(0, 0, 0, 0.08);
+}
+/* posted project single view css end ---------------------------------- */
+/* message chat css start ---------------------------------- */
+.messageChatUsername {
+  padding: 30px;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(74, 153, 211, 0.25));
+}
+.chatboxDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  height: 100vh;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(74, 153, 211, 0.25));
+}
+.mediaInput {
+  position: absolute;
+  right: 30%;
+  height: 91%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.smileInput {
+  position: absolute;
+  right: 23%;
+  height: 91%;
+  display: flex;
+  align-items: center;
+  cursor: pointer !important;
+}
+.btnSendInput {
+  position: absolute;
+  right: 2%;
+  height: 91%;
+  display: flex;
+  align-items: center;
+}
+.chatSeacrhDiv {
+  height: 100vh;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(74, 153, 211, 0.25);
+  border-radius: 5px;
+}
+.unread h1 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #9ea0aa;
+  cursor: pointer;
+}
+.Markasread h1 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1f36;
+  cursor: pointer;
+}
+.headerRead {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.masterNameh1 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 0;
+  color: #000000;
+}
+.masterPara {
+  margin-bottom: 0;
+
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #c4c4c4;
+}
+.masterNameDiv {
+  padding: 10px;
+  margin: 5px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+.btn-primary:focus {
+  box-shadow: 4px 9px 24px 1px rgba(30,41,148,0.41) !important;
+-webkit-box-shadow: 4px 9px 24px 1px rgba(30,41,148,0.41) !important;
+-moz-box-shadow: 4px 9px 24px 1px rgba(30,41,148,0.41) !important;
+}
+/* message chat css end ---------------------------------- */
+
+/* media queries  */
+@media (max-width: 1024px) {
+  .heroCoverimg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .herobgPro {
+    width: 100%;
+    height: 42vh;
+  }
+  .blackboxHero {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    height: 47%;
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .btnaddProject {
+    margin-left: 17px;
+  }
+  .dropdownDiv {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  .herobgPro {
+    height: 80vh;
+  }
+}
 @media (max-width: 990px) {
   .formDiv {
     width: 100%;
@@ -1298,9 +1789,38 @@ footer li a {
     margin-top: 5px;
   }
 }
+@media (max-width: 970px) {
+  .blackboxHero {
+    bottom: 0;
+    left: 0%;
+    height: auto;
+    width: 100%;
+  }
+  .profilePictureName {
+    width: 100%;
+    position: absolute;
+    top: 41%;
+  }
+
+  .circlerow {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+}
 
 @media (max-width: 705px) {
- 
+  .posajobFormdive {
+    padding: 15px;
+  }
+  .postedprojectsingleViewpara {
+    max-width: 100%;
+  }
+  .searchDiv {
+    width: auto;
+  }
+  .zipcodeFeild {
+    width: 100px;
+  }
   .inprogresdiv {
     justify-content: start;
     padding: 20px;
@@ -1346,7 +1866,12 @@ footer li a {
     text-align: center;
   }
 }
-@media (max-width: 783px){
+@media (max-width: 768px) {
+  .herobgPro {
+    height: 49vh;
+  }
+}
+@media (max-width: 783px) {
   .boxRightPostedProject {
     width: auto;
     padding-top: 20px;
@@ -1355,12 +1880,11 @@ footer li a {
     align-items: start;
     justify-content: space-between;
   }
-
 }
 @media (max-width: 850px) {
   .boxComplete {
     width: 100%;
-    border: 1 px solid #c4c4c4;
+    border: 1px solid #c4c4c4;
     box-sizing: border-box;
     filter: drop-shadow(0 px 4 px 4 px rgba(74, 153, 211, 0.25));
     border-radius: 5 px;
@@ -1383,7 +1907,23 @@ footer li a {
     align-items: flex-start;
   }
 }
+@media (max-width: 360px) {
+}
+@media (max-width: 375px) {
+  .herobgPro {
+    height: 56vh;
+  }
+}
 @media (max-width: 381px) {
+  .herobgPro {
+    height: 68vh;
+  }
+
+  .profilePictureName {
+    width: 100%;
+    position: absolute;
+    top: 27%;
+  }
   .profileBoxRightside {
     padding: 57px 15px;
   }
@@ -1395,6 +1935,13 @@ footer li a {
   }
 }
 @media (max-width: 414px) {
+  .inputcus {
+    padding: 11px 12px !important;
+    font-size: 12px !important;
+  }
+  .herobgPro {
+    height: 57vh;
+  }
   .profileBox {
     width: auto;
   }
@@ -1461,9 +2008,23 @@ footer li a {
   }
 }
 @media (max-width: 432px) {
+  .profilePictureName {
+    width: 100%;
+    position: absolute;
+    top: 32%;
+  }
+
+  .circleimg {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+  }
   .profileBox {
     width: auto;
     height: auto;
+  }
+  .circlerow {
+    height: 83px;
   }
   .test {
     height: 224px;
