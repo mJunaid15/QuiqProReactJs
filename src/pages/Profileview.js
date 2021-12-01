@@ -3,6 +3,8 @@ import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 import Navigate from "../components/Navigate";
 import Rating from "@mui/material/Rating";
+import Googlemap from "../components/Googlemap";
+
 
 const Profileview = () => {
   return (
@@ -144,6 +146,7 @@ const Profileview = () => {
           </div>
         </div>
       </section>
+      <Googlemap/>
       <Footer />
     </>
   );

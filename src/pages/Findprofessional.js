@@ -5,21 +5,31 @@ import { Dropdown, Badge } from "react-bootstrap";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 
 const Findprofessional = () => {
   return (
     <>
       <Menu />
+
       <section className="dashboardTabs">
         <div className="container">
           <div className="d-lg-flex  flex-lg-row  d-sm-flex flex-sm-column">
-            <div className="tabsCustomer ">dashboard</div>
+            <div className="tabsCustomer ">
+              <img src="./img/DashboardBlack.png" alt="img" /> &nbsp; dashboard
+            </div>
 
-            <div className="tabsCustomer ">My Project</div>
-            <div className="tabsCustomer">Messages</div>
-            <div className="tabsCustomer">Post a job</div>
-            <div className="tabsCustomer tabcusActive">Find Professional</div>
+            <div className="tabsCustomer ">
+              {" "}
+              <img src="./img/MyProjects.png" alt="img" /> &nbsp; My Project
+            </div>
+            <div className="tabsCustomer">
+              <img src="./img/Vectormsg.png" alt="img" /> &nbsp; Messages
+            </div>
+            <div className="tabsCustomer tabcusActive">
+              <img src="./img/FindProfessionalsRed.png" alt="img" /> &nbsp; Find
+              Professional
+            </div>
           </div>
         </div>
       </section>
@@ -91,7 +101,7 @@ const Findprofessional = () => {
               </div>
 
               <div>
-                <div className="boxComplete my-3">
+                <div className="boxComplete my-3 ">
                   <div className="boxleft">
                     <div className="d-flex align-items-center">
                       <div>
@@ -103,7 +113,7 @@ const Findprofessional = () => {
                         />
                       </div>
                       <div>
-                        <h5 className="titleCover">
+                        <h5 className="titleCover ps-1">
                           {" "}
                           Ayesha Ali <Badge bg="primary">Featured</Badge>{" "}
                         </h5>
@@ -111,13 +121,16 @@ const Findprofessional = () => {
                     </div>
                     <div className="subCatDiv">
                       <p className="categoryPara">
-                        Category, <span> Sub category</span>
+                        Category , <span> Sub category</span>
                       </p>
-                      <h5 className="aboutH5">About</h5>
+                      <p className="categoryPara">
+                        Key words : <span>Key words here</span>
+                      </p>
                       <p className="aboutPara">
-                        About Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum is simply dummy
-                        text of the printing and typesetting industry.
+                        <span className="aboutH5">About me :</span>&nbsp; About
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
                       </p>
                     </div>
                   </div>
@@ -125,16 +138,19 @@ const Findprofessional = () => {
                   <div className="boxRightPostedProject justify-content-center">
                     <div>
                       <p className="categoryPara">
-                        Top skill : <span> skill 1, skill 2, skill 3</span>
+                        Rating : <span> 4.5</span>
                       </p>
                       <p className="categoryPara">
-                        City Name : <span>Example city name</span>
+                        Offers Service : <span> Remote, On Office</span>
+                      </p>
+                      <p className="categoryPara">
+                        City Name: <span> Example city name</span>
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="boxComplete my-3">
+                <div className="boxComplete my-3 ">
                   <div className="boxleft">
                     <div className="d-flex align-items-center">
                       <div>
@@ -146,7 +162,7 @@ const Findprofessional = () => {
                         />
                       </div>
                       <div>
-                        <h5 className="titleCover">
+                        <h5 className="titleCover ps-1">
                           {" "}
                           Ayesha Ali <Badge bg="primary">Featured</Badge>{" "}
                         </h5>
@@ -154,13 +170,16 @@ const Findprofessional = () => {
                     </div>
                     <div className="subCatDiv">
                       <p className="categoryPara">
-                        Category, <span> Sub category</span>
+                        Category , <span> Sub category</span>
                       </p>
-                      <h5 className="aboutH5">About</h5>
+                      <p className="categoryPara">
+                        Key words : <span>Key words here</span>
+                      </p>
                       <p className="aboutPara">
-                        About Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum is simply dummy
-                        text of the printing and typesetting industry.
+                        <span className="aboutH5">About me :</span>&nbsp; About
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
                       </p>
                     </div>
                   </div>
@@ -168,16 +187,18 @@ const Findprofessional = () => {
                   <div className="boxRightPostedProject justify-content-center">
                     <div>
                       <p className="categoryPara">
-                        Top skill : <span> skill 1, skill 2, skill 3</span>
+                        Rating : <span> 4.5</span>
                       </p>
                       <p className="categoryPara">
-                        City Name : <span>Example city name</span>
+                        Offers Service : <span> Remote, On Office</span>
+                      </p>
+                      <p className="categoryPara">
+                        City Name: <span> Example city name</span>
                       </p>
                     </div>
                   </div>
                 </div>
-
-                <div className="boxComplete my-3">
+                <div className="boxComplete my-3 ">
                   <div className="boxleft">
                     <div className="d-flex align-items-center">
                       <div>
@@ -189,7 +210,7 @@ const Findprofessional = () => {
                         />
                       </div>
                       <div>
-                        <h5 className="titleCover">
+                        <h5 className="titleCover ps-1">
                           {" "}
                           Ayesha Ali <Badge bg="primary">Featured</Badge>{" "}
                         </h5>
@@ -197,13 +218,16 @@ const Findprofessional = () => {
                     </div>
                     <div className="subCatDiv">
                       <p className="categoryPara">
-                        Category, <span> Sub category</span>
+                        Category , <span> Sub category</span>
                       </p>
-                      <h5 className="aboutH5">About</h5>
+                      <p className="categoryPara">
+                        Key words : <span>Key words here</span>
+                      </p>
                       <p className="aboutPara">
-                        About Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum is simply dummy
-                        text of the printing and typesetting industry.
+                        <span className="aboutH5">About me :</span>&nbsp; About
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
                       </p>
                     </div>
                   </div>
@@ -211,16 +235,19 @@ const Findprofessional = () => {
                   <div className="boxRightPostedProject justify-content-center">
                     <div>
                       <p className="categoryPara">
-                        Top skill : <span> skill 1, skill 2, skill 3</span>
+                        Rating : <span> 4.5</span>
                       </p>
                       <p className="categoryPara">
-                        City Name : <span>Example city name</span>
+                        Offers Service : <span> Remote, On Office</span>
+                      </p>
+                      <p className="categoryPara">
+                        City Name: <span> Example city name</span>
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="boxComplete my-3">
+                <div className="boxComplete my-3 ">
                   <div className="boxleft">
                     <div className="d-flex align-items-center">
                       <div>
@@ -232,7 +259,7 @@ const Findprofessional = () => {
                         />
                       </div>
                       <div>
-                        <h5 className="titleCover">
+                        <h5 className="titleCover ps-1">
                           {" "}
                           Ayesha Ali <Badge bg="primary">Featured</Badge>{" "}
                         </h5>
@@ -240,13 +267,16 @@ const Findprofessional = () => {
                     </div>
                     <div className="subCatDiv">
                       <p className="categoryPara">
-                        Category, <span> Sub category</span>
+                        Category , <span> Sub category</span>
                       </p>
-                      <h5 className="aboutH5">About</h5>
+                      <p className="categoryPara">
+                        Key words : <span>Key words here</span>
+                      </p>
                       <p className="aboutPara">
-                        About Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum is simply dummy
-                        text of the printing and typesetting industry.
+                        <span className="aboutH5">About me :</span>&nbsp; About
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
                       </p>
                     </div>
                   </div>
@@ -254,17 +284,223 @@ const Findprofessional = () => {
                   <div className="boxRightPostedProject justify-content-center">
                     <div>
                       <p className="categoryPara">
-                        Top skill : <span> skill 1, skill 2, skill 3</span>
+                        Rating : <span> 4.5</span>
                       </p>
                       <p className="categoryPara">
-                        City Name : <span>Example city name</span>
+                        Offers Service : <span> Remote, On Office</span>
+                      </p>
+                      <p className="categoryPara">
+                        City Name: <span> Example city name</span>
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="d-flex justify-content-end my-4">
-                <Button variant="outlined">Learn More &nbsp; <img src="./img/chevronright.png" alt="img" /></Button>
-                  
+                <div className="d-flex justify-content-between align-items-center my-4">
+                  <p className="featureProPara">Features Professionals.</p>
+                  <Button variant="outlined">
+                    Load More &nbsp;{" "}
+                    <img src="./img/chevronright.png" alt="img" />
+                  </Button>
+                </div>
+                <div className="lineOpaticty my-3"></div>
+                <div className="boxComplete my-3 ">
+                  <div className="boxleft">
+                    <div className="d-flex align-items-center">
+                      <div>
+                        {" "}
+                        <img
+                          src="./img/cover.png"
+                          alt="img"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <h5 className="titleCover ps-1">
+                          {" "}
+                          Ayesha Ali <Badge bg="primary">Featured</Badge>{" "}
+                        </h5>
+                      </div>
+                    </div>
+                    <div className="subCatDiv">
+                      <p className="categoryPara">
+                        Category , <span> Sub category</span>
+                      </p>
+                      <p className="categoryPara">
+                        Key words : <span>Key words here</span>
+                      </p>
+                      <p className="aboutPara">
+                        <span className="aboutH5">About me :</span>&nbsp; About
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="boxRightPostedProject justify-content-center">
+                    <div>
+                      <p className="categoryPara">
+                        Rating : <span> 4.5</span>
+                      </p>
+                      <p className="categoryPara">
+                        Offers Service : <span> Remote, On Office</span>
+                      </p>
+                      <p className="categoryPara">
+                        City Name: <span> Example city name</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="boxComplete my-3 ">
+                  <div className="boxleft">
+                    <div className="d-flex align-items-center">
+                      <div>
+                        {" "}
+                        <img
+                          src="./img/cover.png"
+                          alt="img"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <h5 className="titleCover ps-1">
+                          {" "}
+                          Ayesha Ali <Badge bg="primary">Featured</Badge>{" "}
+                        </h5>
+                      </div>
+                    </div>
+                    <div className="subCatDiv">
+                      <p className="categoryPara">
+                        Category , <span> Sub category</span>
+                      </p>
+                      <p className="categoryPara">
+                        Key words : <span>Key words here</span>
+                      </p>
+                      <p className="aboutPara">
+                        <span className="aboutH5">About me :</span>&nbsp; About
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="boxRightPostedProject justify-content-center">
+                    <div>
+                      <p className="categoryPara">
+                        Rating : <span> 4.5</span>
+                      </p>
+                      <p className="categoryPara">
+                        Offers Service : <span> Remote, On Office</span>
+                      </p>
+                      <p className="categoryPara">
+                        City Name: <span> Example city name</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="boxComplete my-3 ">
+                  <div className="boxleft">
+                    <div className="d-flex align-items-center">
+                      <div>
+                        {" "}
+                        <img
+                          src="./img/cover.png"
+                          alt="img"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <h5 className="titleCover ps-1">
+                          {" "}
+                          Ayesha Ali <Badge bg="primary">Featured</Badge>{" "}
+                        </h5>
+                      </div>
+                    </div>
+                    <div className="subCatDiv">
+                      <p className="categoryPara">
+                        Category , <span> Sub category</span>
+                      </p>
+                      <p className="categoryPara">
+                        Key words : <span>Key words here</span>
+                      </p>
+                      <p className="aboutPara">
+                        <span className="aboutH5">About me :</span>&nbsp; About
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="boxRightPostedProject justify-content-center">
+                    <div>
+                      <p className="categoryPara">
+                        Rating : <span> 4.5</span>
+                      </p>
+                      <p className="categoryPara">
+                        Offers Service : <span> Remote, On Office</span>
+                      </p>
+                      <p className="categoryPara">
+                        City Name: <span> Example city name</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="boxComplete my-3 ">
+                  <div className="boxleft">
+                    <div className="d-flex align-items-center">
+                      <div>
+                        {" "}
+                        <img
+                          src="./img/cover.png"
+                          alt="img"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <h5 className="titleCover ps-1">
+                          {" "}
+                          Ayesha Ali <Badge bg="primary">Featured</Badge>{" "}
+                        </h5>
+                      </div>
+                    </div>
+                    <div className="subCatDiv">
+                      <p className="categoryPara">
+                        Category , <span> Sub category</span>
+                      </p>
+                      <p className="categoryPara">
+                        Key words : <span>Key words here</span>
+                      </p>
+                      <p className="aboutPara">
+                        <span className="aboutH5">About me :</span>&nbsp; About
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="boxRightPostedProject justify-content-center">
+                    <div>
+                      <p className="categoryPara">
+                        Rating : <span> 4.5</span>
+                      </p>
+                      <p className="categoryPara">
+                        Offers Service : <span> Remote, On Office</span>
+                      </p>
+                      <p className="categoryPara">
+                        City Name: <span> Example city name</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="d-flex justify-content-between align-items-center my-4">
+                  <p className="featureProPara">Regular Professionals.</p>
+                  <Button variant="outlined">
+                    Load More &nbsp;{" "}
+                    <img src="./img/chevronright.png" alt="img" />
+                  </Button>
                 </div>
               </div>
             </div>
@@ -285,7 +521,7 @@ const Findprofessional = () => {
                       <input
                         type="email"
                         className="form-control inputcusFilter"
-                        placeholder="Your E-mail"
+                        placeholder="Search by skills"
                         id="exampleInputPassword1"
                       />
                       <span className="ZipInput">
@@ -375,8 +611,7 @@ const Findprofessional = () => {
         </div>
       </section>
 
-
-      <Footer/>
+      <Footer />
     </>
   );
 };

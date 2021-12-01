@@ -16,12 +16,11 @@ const Customerdashboard = () => {
         </div>
         <div className="container">
           <div className="d-lg-flex  flex-lg-row  d-sm-flex flex-sm-column">
-            <div className="tabsCustomer tabcusActive">dashboard</div>
+            <div className="tabsCustomer tabcusActive"><img src="./img/Dashboard.png" alt="img" /> &nbsp; dashboard</div>
 
-            <div className="tabsCustomer">My Project</div>
-            <div className="tabsCustomer">Messages</div>
-            <div className="tabsCustomer">Post a job</div>
-            <div className="tabsCustomer">Find Master</div>
+            <div className="tabsCustomer" > <img src="./img/MyProjects.png" alt="img" /> &nbsp; My Project</div>
+            <div className="tabsCustomer"><img src="./img/Vectormsg.png" alt="img" /> &nbsp; Messages</div>
+            <div className="tabsCustomer"><img src="./img/FindProfessionals.png" alt="img" /> &nbsp; Find Professional</div>
           </div>
         </div>
       </section>
@@ -158,7 +157,7 @@ const Customerdashboard = () => {
             <div className="col-12 col-md-3 col-lg-3">
               <div className="leaderboardcard">
                 <div className="d-flex flex-row justify-content-between">
-                  <h1 className="topH1leaderboard">Leaderboard</h1>
+                  <h1 className="topH1leaderboard"><img src="./img/online.png" alt="img" /> &nbsp; Online &nbsp; <img src="./img/onlineDownarrow.png" alt="img" />  </h1>
                   <img src="./img/Calendar.png" alt="png" />
                 </div>
                 <div className="text-center mt-2">
@@ -168,7 +167,7 @@ const Customerdashboard = () => {
                       <img src="./img/Ellipse 23.png" alt="img-" />
                   </div>
                   <Rating name="no-value" value={null} />
-                  <h1 className="creditsheading mt-2">Credits : 20</h1>
+                  <h1 className="creditsheading mt-2">4.4</h1>
                 </div>
               </div>
 

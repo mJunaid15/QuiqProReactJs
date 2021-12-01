@@ -1,62 +1,63 @@
-import React, { useState } from "react";
-import { Navbar, Nav, DropdownButton, Dropdown } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Navbar, Nav, Form, DropdownButton, Dropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import Badge from "@mui/material/Badge";
-import Button from "@mui/material/Button";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import OutsideAlerter from "./OutsideAlerter";
-import { Link } from "react-router-dom";
 
-const Menu = () => {
+const Navmenu = () => {
   const [show, setShow] = useState(false);
   const [Dropdown, setDropdown] = useState(false);
-
   return (
     <>
-      <Navbar bg="light" expand="lg">
-        <div className="container">
+      <Navbar bg="" expand="lg" style={{boxShadow: "0px 4px 4px rgba(187, 222, 251, 0.1)"}}>
+        <div className="container-fluid">
           <Navbar.Brand href="#home">
-            <img src="./img/logo.png" alt="logo" className="img-fluid" />
+            <h5 className="dashboardTitle">dashboard</h5>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto align-items-center flex-sm-row">
-              <Nav.Link href="#home">
-                <Button variant="text">
-                  <img
-                    src="./img/NewspaperClipping.png"
-                    alt="logo"
-                    className="img-fluid"
-                  />{" "}
-                </Button>
-              </Nav.Link>
-              <Nav.Link href="#home">
-                <Button variant="text" className="m-0">
-                  <img src="./img/mail.png" alt="logo" className="img-fluid" />{" "}
-                </Button>
-              </Nav.Link>
-              <OutsideAlerter
+                
+            <Nav.Link>
+            <div className=" inputField">
+                      <span className="iconsInput">
+                        <img
+                          src="./img/searchIcon.png"
+                          alt="img"
+                          className="img-fluid"
+                        />
+                      </span>
+                      <input
+                        type="email"
+                        className="form-control inputcusFilter"
+                        placeholder="Search by skills"
+                        id="exampleInputPassword1"
+                      />
+                     
+                    </div>
+
+            </Nav.Link>
+         
+
+              <Nav.Link
+                className="notiRelative"
                 onClick={() => {
                   setShow(!show);
                 }}
               >
-                <Nav.Link
-                  className="notiRelative"
-                  onClick={() => {
-                    setShow(!show);
-                  }}
-                >
-                  <Badge badgeContent={4} color="primary">
-                    <Button variant="text">
-                      <img
-                        src="./img/notification.png"
-                        alt="logo"
-                        className="img-fluid"
-                      />
-                    </Button>
-                  </Badge>
-                </Nav.Link>
-              </OutsideAlerter>
+                <Badge badgeContent={4} color="primary">
+                  <Button variant="text">
+                    <img
+                      src="./img/notification.png"
+                      alt="logo"
+                      className="img-fluid"
+                    />
+                  </Button>
+                </Badge>
+              </Nav.Link>
+
               {show ? (
                 <div className="notification-box">
                   <div className="notiHeader ">
@@ -232,4 +233,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Navmenu;

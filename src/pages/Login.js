@@ -16,6 +16,8 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import FormGroup from "@mui/material/FormGroup";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -175,10 +177,12 @@ export default function Login() {
                     </FormGroup>
                     <div className="d-flex justify-content-between px-1 py-3">
                       <p>
-                        Quick Sign-in: <img src="./img/google.png" alt="g" />{" "}
-                        <img src="./img/facebook.png" alt="g" />{" "}
+                        Quick Sign-in: <img src="./img/google.png" alt="g" />&nbsp;
+                        <img src="./img/facebook.png" alt="g" />
                       </p>
-                      <p className="forgotPara">Sign Up</p>
+                      <p className="forgotPara" onClick={()=>handleChange("event",1)}>
+                        Sign Up
+                        </p>
                     </div>
                   </Box>
                 </div>
@@ -282,10 +286,11 @@ export default function Login() {
                     </FormGroup>
                     <div className="d-flex justify-content-between px-1 py-3">
                       <p>
-                        Quick Sign-up: <img src="./img/google.png" alt="g" />{" "}
-                        <img src="./img/facebook.png" alt="g" />{" "}
+                        Quick Sign-up: <img src="./img/google.png" alt="g"  /> &nbsp;
+
+                        <img src="./img/facebook.png" alt="g" />
                       </p>
-                      <p className="forgotPara"> Existing account?</p>
+                      <p className="forgotPara" onClick={()=>handleChange("event",0)}> Existing account?</p>
                     </div>
                   </Box>
                 </div>

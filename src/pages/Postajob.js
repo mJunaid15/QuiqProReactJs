@@ -5,6 +5,11 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import FormGroup from "@mui/material/FormGroup";
+
+
 
 
 import Footer from "../components/Footer";
@@ -18,19 +23,27 @@ const Postajob = () => {
   return (
     <>
       <Menu />
-      <section className="dashboardTabs">
+      <section className="dashboardTabs pt-4">
         <div className="container">
           <div className="d-lg-flex  flex-lg-row  d-sm-flex flex-sm-column">
-            <div className="tabsCustomer ">dashboard</div>
+            <div className="tabsCustomer ">
+              <img src="./img/DashboardBlack.png" alt="img" /> &nbsp; dashboard
+            </div>
 
-            <div className="tabsCustomer ">My Project</div>
-            <div className="tabsCustomer">Messages</div>
-            <div className="tabsCustomer tabcusActive">Post a job</div>
-            <div className="tabsCustomer">Find Master</div>
+            <div className="tabsCustomer ">
+              {" "}
+              <img src="./img/MyProjects.png" alt="img" /> &nbsp; My Project
+            </div>
+            <div className="tabsCustomer">
+              <img src="./img/Vectormsg.png" alt="img" /> &nbsp; Messages
+            </div>
+            <div className="tabsCustomer">
+              <img src="./img/FindProfessionals.png" alt="img" />&nbsp;Find
+              Professional
+            </div>
           </div>
         </div>
       </section>
-
       <section className="postAJob my-3">
         <div className="container">
           <div className="posajobFormdive">
@@ -102,6 +115,79 @@ const Postajob = () => {
                       <MenuItem value={30}>Thirty</MenuItem>
                     </Select>
                   </FormControl>
+                </div>
+              </div>
+              <div className="row  mt-3">
+                <div className="col-12 ">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">
+                    Select key words
+                    </InputLabel>
+                    <Select
+                      labelId="demo-simple-select-label"
+                      id="demo-simple-select"
+                      value={age}
+                      label="Age"
+                      onChange={handleChange}
+                    >
+                      <MenuItem value={10}>Ten</MenuItem>
+                      <MenuItem value={20}>Twenty</MenuItem>
+                      <MenuItem value={30}>Thirty</MenuItem>
+                    </Select>
+                  </FormControl>
+                </div>
+              </div>
+              <div className="row mt-3">
+                <div className="col-12">
+                  <TextField
+                    fullWidth
+                    label="Enter your zip code"
+                    id="fullWidth"
+                    size="small"
+                  />
+                </div>
+              </div>
+              <div className="row mt-3">
+                <div className="col-12 col-md-4 col-lg-4">
+               <h5 className="jobType">
+               Job Type
+               </h5>
+                </div>
+              
+              </div>
+              <div className="row mt-3">
+                <div className="col-12 col-md-4 col-lg-4">
+                <div className="d-flex align-items-center">
+                      <FormGroup>
+                        <FormControlLabel
+                          control={<Checkbox  />}
+                          label="Remote"
+                        />
+                      </FormGroup>
+                      
+                    </div>
+                </div>
+                <div className="col-12 col-md-4 col-lg-4">
+                <div className="d-flex align-items-center">
+                      <FormGroup>
+                        <FormControlLabel
+                          control={<Checkbox  />}
+                          label="In Office"
+                        />
+                      </FormGroup>
+                      
+                    </div>
+                </div>
+                <div className="col-12 col-md-4 col-lg-4">
+                <div className="d-flex align-items-center">
+                      <FormGroup>
+                        <FormControlLabel
+                          control={<Checkbox  />}
+                          label="I will travel"
+                        />
+                      </FormGroup>
+                      
+                    </div>
                 </div>
               </div>
 

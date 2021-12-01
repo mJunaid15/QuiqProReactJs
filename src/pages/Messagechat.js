@@ -10,15 +10,24 @@ const Messagechat = () => {
   return (
     <>
       <Menu />
-      <section className="dashboardTabs">
+      <section className="dashboardTabs pt-3">
         <div className="container">
           <div className="d-lg-flex  flex-lg-row  d-sm-flex flex-sm-column">
-            <div className="tabsCustomer ">dashboard</div>
+            <div className="tabsCustomer ">
+              <img src="./img/DashboardBlack.png" alt="img" /> &nbsp; dashboard
+            </div>
 
-            <div className="tabsCustomer ">My Project</div>
-            <div className="tabsCustomer tabcusActive">Messages</div>
-            <div className="tabsCustomer ">Post a job</div>
-            <div className="tabsCustomer">Find Master</div>
+            <div className="tabsCustomer ">
+              {" "}
+              <img src="./img/MyProjects.png" alt="img" /> &nbsp; My Project
+            </div>
+            <div className="tabsCustomer tabcusActive">
+              <img src="./img/message-squarered.png" alt="img" /> &nbsp; Messages
+            </div>
+            <div className="tabsCustomer ">
+              <img src="./img/FindProfessionals.png" alt="img" />&nbsp;Find
+              Professional
+            </div>
           </div>
         </div>
       </section>
@@ -26,7 +35,7 @@ const Messagechat = () => {
       <section className="chatboxsection">
         <div className="container my-4">
           <div className="row">
-            <div className="col-12 col-md-12 col-lg-3 text-sm-center">
+            <div className="col-12 col-md-12 col-lg-3 ">
               <div className="messageChatUsername">
                 <img
                   src="./img/CreditsReview.png "
@@ -71,7 +80,7 @@ const Messagechat = () => {
                       </p>
                     </div>
 
-                    <div className="innerCommentDiv">
+                    {/* <div className="innerCommentDiv">
                       <p
                         className="chatPara p-2 mt-lg-3 mt-sm-0"
                         style={{ background: " #F9FCFF" }}
@@ -108,7 +117,7 @@ const Messagechat = () => {
                       <p className="timing text-center">
                         4-Apr-21 &nbsp; 7:00 pm
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 
@@ -167,7 +176,7 @@ const Messagechat = () => {
                   
 
                   <div className="headerRead">
-                   <div className="unread">
+                   <div className="unreadDiv">
                        <h1 >Unread <img src="./img/downChevron.png" alt="img" /></h1>
                    </div>
                    <div className="Markasread">

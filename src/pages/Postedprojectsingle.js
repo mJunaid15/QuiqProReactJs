@@ -72,8 +72,10 @@ const Postedprojectsingle = () => {
            
 
             {/* professional name  */}
-          <div className="boxComplete mt-3">
-            <div className="boxleftPostedproject">
+          
+
+          <div className="boxComplete my-3">
+            <div className="boxleft" style={{borderRight: "none"}}>
               <h1 className="boxComplete-h1">Professional Name</h1>
               <p className="Postedporject-Para">
                 Price: <span>Fixed</span>
@@ -85,9 +87,9 @@ const Postedprojectsingle = () => {
                 Deadline: <span>Start : 2-11-2021</span> &nbsp;{" "}
                 <span>End : 2-11-2021</span>
               </p>
-              <p className="boxComplete-para2 postedprojectsingleViewpara">
+              <p className="boxComplete-para2 ">
                 Project Details: <br />
-                <span className="postedSpanPara postedprojectsingleViewpara">
+                <span className="postedSpanPara ">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -101,14 +103,25 @@ const Postedprojectsingle = () => {
               <p className="Postedporject-Para">
                 Attachment: <span>2</span>
               </p>
-              <div className=" d-flex justify-content-end">
+            
+            </div>
+            <div className="boxRightPostedProject   d-flex justify-content-end align-items-end" >
+              <div className="">
+              
+               
+                <div className=" d-flex ">
                 <button className="btnProfileEdit me-4">View </button>
+                <button className="btnProfileEdit me-4">Pass </button>
+              </div>
+                
+
+
+            
               </div>
             </div>
           </div>
-
           <div className="boxComplete my-3">
-            <div className="boxleftPostedproject">
+            <div className="boxleft" style={{borderRight: "none"}}>
               <h1 className="boxComplete-h1">Professional Name</h1>
               <p className="Postedporject-Para">
                 Price: <span>Fixed</span>
@@ -120,9 +133,9 @@ const Postedprojectsingle = () => {
                 Deadline: <span>Start : 2-11-2021</span> &nbsp;{" "}
                 <span>End : 2-11-2021</span>
               </p>
-              <p className="boxComplete-para2 postedprojectsingleViewpara">
+              <p className="boxComplete-para2 ">
                 Project Details: <br />
-                <span className="postedSpanPara postedprojectsingleViewpara">
+                <span className="postedSpanPara ">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -136,8 +149,112 @@ const Postedprojectsingle = () => {
               <p className="Postedporject-Para">
                 Attachment: <span>2</span>
               </p>
-              <div className=" d-flex justify-content-end">
+            
+            </div>
+            <div className="boxRightPostedProject   d-flex justify-content-end align-items-end" >
+              <div className="">
+              
+               
+                <div className=" d-flex ">
                 <button className="btnProfileEdit me-4">View </button>
+                <button className="btnProfileEdit me-4">Pass </button>
+              </div>
+                
+
+
+            
+              </div>
+            </div>
+          </div>
+          <div className="boxComplete my-3">
+            <div className="boxleft" style={{borderRight: "none"}}>
+              <h1 className="boxComplete-h1">Professional Name</h1>
+              <p className="Postedporject-Para">
+                Price: <span>Fixed</span>
+              </p>
+              <p className="Postedporject-Para">
+                Amount: <span>$ 600</span>
+              </p>
+              <p className="Postedporject-Para">
+                Deadline: <span>Start : 2-11-2021</span> &nbsp;{" "}
+                <span>End : 2-11-2021</span>
+              </p>
+              <p className="boxComplete-para2 ">
+                Project Details: <br />
+                <span className="postedSpanPara ">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing{" "}
+                </span>
+              </p>
+              <p className="Postedporject-Para">
+                Attachment: <span>2</span>
+              </p>
+            
+            </div>
+            <div className="boxRightPostedProject   d-flex justify-content-end align-items-end" >
+              <div className="">
+              
+               
+                <div className=" d-flex ">
+                <button className="btnProfileEdit me-4">View </button>
+                <button className="btnProfileEdit me-4">Pass </button>
+              </div>
+                
+
+
+            
+              </div>
+            </div>
+          </div>
+          <div className="boxComplete my-3">
+            <div className="boxleft" style={{borderRight: "none"}}>
+              <h1 className="boxComplete-h1">Professional Name</h1>
+              <p className="Postedporject-Para">
+                Price: <span>Fixed</span>
+              </p>
+              <p className="Postedporject-Para">
+                Amount: <span>$ 600</span>
+              </p>
+              <p className="Postedporject-Para">
+                Deadline: <span>Start : 2-11-2021</span> &nbsp;{" "}
+                <span>End : 2-11-2021</span>
+              </p>
+              <p className="boxComplete-para2 ">
+                Project Details: <br />
+                <span className="postedSpanPara ">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing{" "}
+                </span>
+              </p>
+              <p className="Postedporject-Para">
+                Attachment: <span>2</span>
+              </p>
+            
+            </div>
+            <div className="boxRightPostedProject   d-flex justify-content-end align-items-end" >
+              <div className="">
+              
+               
+                <div className=" d-flex ">
+                <button className="btnProfileEdit me-4">View </button>
+                <button className="btnProfileEdit me-4">Pass </button>
+              </div>
+                
+
+
+            
               </div>
             </div>
           </div>

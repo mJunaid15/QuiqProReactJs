@@ -51,12 +51,21 @@ const Completeproject = () => {
       <section className="dashboardTabs">
         <div className="container">
           <div className="d-lg-flex  flex-lg-row  d-sm-flex flex-sm-column">
-            <div className="tabsCustomer ">dashboard</div>
+            <div className="tabsCustomer ">
+              <img src="./img/DashboardBlack.png" alt="img" /> &nbsp; dashboard
+            </div>
 
-            <div className="tabsCustomer tabcusActive">My Project</div>
-            <div className="tabsCustomer">Messages</div>
-            <div className="tabsCustomer">Post a job</div>
-            <div className="tabsCustomer">Find Master</div>
+            <div className="tabsCustomer tabcusActive">
+              {" "}
+              <img src="./img/MyProjectsred.png" alt="img" /> &nbsp; My Project
+            </div>
+            <div className="tabsCustomer">
+              <img src="./img/Vectormsg.png" alt="img" /> &nbsp; Messages
+            </div>
+            <div className="tabsCustomer">
+              <img src="./img/FindProfessionals.png" alt="img" />&nbsp;Find
+              Professional
+            </div>
           </div>
         </div>
       </section>
@@ -293,6 +302,11 @@ const Completeproject = () => {
                   </div>
                 </div>
               </div>
+              <div className=" mt-3 text-end">
+                <button className=" btnProfileEditViewmore">
+                  View More <span><img src="./img/chevronright.png" alt="img" /></span> 
+                </button>
+              </div>
             </TabPanel>
             <TabPanel value={value} index={1}>
               <div className="boxComplete">
@@ -319,16 +333,16 @@ const Completeproject = () => {
                 <div className="boxRightPostedProject ">
                   <div>
                     <p className="boxComplete-Para">
-                    Price:   <span>Fixed</span>
+                      Price: <span>Fixed</span>
                     </p>
                     <p className="boxComplete-para2 mb-1">
                       Amount: <span>$ 600</span>
                     </p>
                     <p className="boxComplete-para2 mb-1">
-                    Deadline: <span>  21-10-2021 to 22-10-2021 </span>
+                      Deadline: <span> 21-10-2021 to 22-10-2021 </span>
                     </p>
                     <p className="boxComplete-para2">
-                    Total proposal:   <span>  2 </span>
+                      Total proposal: <span> 2 </span>
                     </p>
                   </div>
 
@@ -364,16 +378,16 @@ const Completeproject = () => {
                 <div className="boxRightPostedProject ">
                   <div>
                     <p className="boxComplete-Para">
-                    Price:   <span>Fixed</span>
+                      Price: <span>Fixed</span>
                     </p>
                     <p className="boxComplete-para2 mb-1">
                       Amount: <span>$ 600</span>
                     </p>
                     <p className="boxComplete-para2 mb-1">
-                    Deadline: <span>  21-10-2021 to 22-10-2021 </span>
+                      Deadline: <span> 21-10-2021 to 22-10-2021 </span>
                     </p>
                     <p className="boxComplete-para2">
-                    Total proposal:   <span>  2 </span>
+                      Total proposal: <span> 2 </span>
                     </p>
                   </div>
 

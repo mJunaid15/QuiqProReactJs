@@ -377,16 +377,16 @@ footer {
 footer h5 {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 21px;
   color: #ffffff;
 }
 
 footer li a {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 29px;
   letter-spacing: 0.04em;
   text-decoration: none;
   color: #ffffff;
@@ -398,8 +398,8 @@ footer li a {
 
 .loginScreen {
   height: 100vh;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   background: linear-gradient(
       180deg,
       #2d408e38 -17.33%,
@@ -407,6 +407,15 @@ footer li a {
     ),
     #ffffff;
   /* box-shadow: 0px 11px 16px rgb(75 0 129 / 9%); */
+}
+.loginMainDiv {
+  height: 100%;
+}
+.backtextDiv {
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+  color: #000000;
 }
 
 .formDiv {
@@ -797,12 +806,16 @@ footer li a {
 }
 
 /* customer dashboard css end  */
+/* google map section  */
 
+.googleMapSection {
+}
 /* profilesection css start  */
 
 .profilesection {
   width: 100%;
-  height: 45vh;
+  height: auto;
+  padding: 30px 0;
   background-image: url("../src/cssimages/Background.png");
   background-size: 100% 82%;
   margin: 30px 0;
@@ -855,11 +868,11 @@ footer li a {
   margin: 0px 4px;
 }
 .profileBox {
-  width: 475px;
+  width: 100%;
   height: auto;
   background: #ffffff;
   box-shadow: 0px 3.5px 5.5px rgb(0 0 0 / 7%);
-  border-radius: 15px;
+  border-radius: 0px;
   padding: 15px;
 }
 .profilBoxOuter {
@@ -980,10 +993,76 @@ footer li a {
 /* profilesection css end  */
 
 /* profileEditSection css start  */
+.basicsProSettingH3 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.profileformBoxMainDiv {
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(187, 222, 251, 0.25));
+  border-radius: 5px;
+}
+.settingDv {
+  background: #ffffff;
+  border: 2px solid #e7e8e9;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 35px 20px;
+  width: 100%;
+  height: 100%;
+}
+.settingh5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: #2d408e;
+}
+.ulProfileedit {
+  list-style-type: none;
+}
+.profileUl {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 10px;
+  color: #8e8ea1;
+}
+
 .profileSection {
-  height: 100vh;
+  height: auto;
+  padding: 30px 0;
   display: flex;
   align-items: center;
+}
+.basicProfileTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #22242c;
+  padding: 10px 0;
+}
+.basicProfileTitle:hover {
+  /* font-weight: 500; */
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #2d408e;
+}
+.basicProfileTitleActive {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #2d408e;
 }
 .changePicture {
   cursor: pointer;
@@ -998,7 +1077,6 @@ footer li a {
 .editForm {
   /* background-color: red !important; */
   width: 80%;
-  margin: 0 auto;
 }
 .gender {
   font-weight: normal;
@@ -1008,6 +1086,19 @@ footer li a {
 
   margin-bottom: 0px !important ;
   color: #000000;
+}
+.btnProfileEditViewmore {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #2d408e;
+  border: 1px solid #2d408e;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 135.14px;
+  height: 44px;
+  background-color: transparent;
 }
 .btnProfileEdit {
   width: 135.14px;
@@ -1032,7 +1123,7 @@ footer li a {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border: 2px solid #3f61eb !important;
+  border: 1px solid #3f61eb !important;
   box-shadow: none !important;
 }
 /* profileEditSection css end  */
@@ -1049,8 +1140,33 @@ footer li a {
   flex-direction: row;
   justify-content: space-between;
 }
+.boxComplete:hover {
+  background: rgba(187, 222, 251, 0.1);
+  border: 1px solid #e6e7e9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.lineOpaticty {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #ffffff -1.27%,
+    #d7d7d7 54.61%,
+    #ffffff 100%
+  );
+  border-radius: 5px;
+}
+.featureProPara {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+
+  color: #868686;
+}
 .boxleft {
-  width: 50%;
+  width: 65%;
   border-right: 1px solid #c4c4c4;
 }
 .postedSpanPara {
@@ -1063,7 +1179,7 @@ footer li a {
   color: #000000 !important;
 }
 .boxRight {
-  width: 50%;
+  width: 35%;
   padding-left: 20px;
   display: flex;
   flex-direction: row;
@@ -1077,6 +1193,14 @@ footer li a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.boxRightPostedProjectAuto {
+  width: auto;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
 }
 
 .boxComplete-h1 {
@@ -1289,6 +1413,48 @@ footer li a {
   right: 0;
   top: 0;
 }
+.sliderblackBox {
+  position: relative;
+  width: 100%;
+}
+.blackboxHeroSlider {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 309px;
+  height: 205px;
+  background-color: #18191f;
+  padding: 35px;
+  border-radius: 2px;
+}
+.sliderImgDiv {
+  width: 100%;
+  height: 400px;
+}
+.sliderImgs:nth-child(1) {
+  position: absolute;
+  right: 0;
+  width: 358px;
+  height: 347px;
+}
+.sliderImgs:nth-child(2) {
+  position: absolute;
+  right: 30%;
+  width: 358px;
+  height: 307px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 3rem !important;
+  height: 3rem !important;
+  border-radius: 50%;
+
+  background: #2d408e;
+  background-repeat: no-repeat;
+  /* background-position: 50%; */
+  background-size: 100% 100%;
+}
 .blackboxHero {
   position: absolute;
   bottom: 0;
@@ -1309,7 +1475,7 @@ footer li a {
   border-radius: 5px;
   padding: 10px 40px;
   border: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   /* identical to box height, or 114% */
@@ -1593,6 +1759,14 @@ border-bottom: 1px solid #B6030C ; */
 
   color: #868686;
 }
+.jobType {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #000000;
+}
 .choosefileH1 {
   font-size: 16px;
   line-height: 24px;
@@ -1681,7 +1855,7 @@ border-bottom: 1px solid #B6030C ; */
   box-shadow: 0px 4px 4px rgba(74, 153, 211, 0.25);
   border-radius: 5px;
 }
-.unread h1 {
+.unreadDiv h1 {
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
@@ -1722,11 +1896,318 @@ border-bottom: 1px solid #B6030C ; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
 .btn-primary:focus {
-  box-shadow: 4px 9px 24px 1px rgba(30,41,148,0.41) !important;
--webkit-box-shadow: 4px 9px 24px 1px rgba(30,41,148,0.41) !important;
--moz-box-shadow: 4px 9px 24px 1px rgba(30,41,148,0.41) !important;
+  box-shadow: 4px 9px 24px 1px rgba(30, 41, 148, 0.41) !important;
+  -webkit-box-shadow: 4px 9px 24px 1px rgba(30, 41, 148, 0.41) !important;
+  -moz-box-shadow: 4px 9px 24px 1px rgba(30, 41, 148, 0.41) !important;
 }
 /* message chat css end ---------------------------------- */
+/* notification css start ---------------------------------- */
+.Dropdown-box {
+  padding: 10px;
+  position: absolute;
+  top: 68px;
+  transform: translateX(0);
+  right: 0;
+  z-index: 11;
+  width: 200px;
+  max-width: 440px;
+  height: auto;
+  background: #ffffff;
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
+  border-radius: 4px;
+  cursor: pointer;
+}
+.notiRelative {
+  position: relative;
+  /* background-color: red; */
+}
+.notification-box {
+  padding: 10px;
+  position: absolute;
+  top: 68px;
+  transform: translateX(-38%);
+  right: 0;
+  z-index: 11;
+  width: auto;
+  max-width: 440px;
+  height: auto;
+  background: #ffffff;
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.notiHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.notiHeader h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1f36;
+}
+.notiHeader span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #9ea0aa;
+}
+.imgboxNotify {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.textboxNotify h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1f36;
+}
+.innerNotify {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  padding-top: 10px;
+  background: #ffffff;
+  box-shadow: 0px 1px 0px #e4e8ee;
+}
+.innerNotify :hover {
+  opacity: 0.9;
+}
+.unread {
+  width: 8px;
+  height: 8px;
+  background: #90cdf4;
+  border-radius: 50%;
+  border: 1px solid #4299e1;
+  box-sizing: border-box;
+}
+.imgboxNotify {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.textboxNotify {
+  width: 90%;
+}
+.acceptbtn {
+  background: #e00b0b;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  margin-right: 10px;
+}
+.Rejectbtn {
+  background: #ffffff;
+  border: 1px solid #dddee1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3c4257;
+}
+.btnnotifydiv {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.TimeNotifydiv {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #a5acb8;
+}
+.comentText {
+  font-weight: normal;
+}
+/* notification css end ---------------------------------- */
+/* ForgotH1 css start ---------------------------------- */
+
+.ForgotH1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #0f001a;
+  text-align: center;
+}
+
+/* ForgotH1 css end ---------------------------------- */
+
+/* profileEditBages css start ************************************************************** */
+.framMain {
+  height: 400px;
+  width: 100%;
+}
+.BadgesTitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #868686;
+  padding: 5px;
+}
+.frameParaTitle {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+
+  color: #212121;
+}
+.frameBtn {
+  border: 1px solid #2bace2;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 5px 20px;
+  color: #2bace2;
+}
+.framePara {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+
+  color: #212121;
+}
+.frameDiv {
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+}
+/* profileEditBages css end ************************************************************** */
+/* profileEditSupport css start ************************************************************** */
+
+label[data-shrink="false"]
+  + .MuiInputBase-formControl
+  .css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding-bottom: 22px;
+}
+.ChatInput {
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  cursor: pointer;
+}
+.TextAaInput {
+  position: absolute;
+  right: 13%;
+  bottom: 4%;
+  cursor: pointer;
+}
+.mediaBlackInput {
+  position: absolute;
+  right: 22%;
+  bottom: 4%;
+
+  cursor: pointer;
+}
+
+/* profileEditSupport css end ************************************************************** */
+/* profileEditSupportLIST css start ************************************************************** */
+
+.profileeditListMaindiv h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+}
+.profileeditListMaindiv p {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+
+  color: #212121;
+}
+/* profileEditSupportLIST css end ************************************************************** */
+
+/* profileEditSupportLISTTicket css start ************************************************************** */
+
+.chatSupportDiv {
+  background: rgba(187, 222, 251, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+}
+.chatSupportDiv p {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+
+  color: #212121;
+}
+
+.ticketTiming {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #c4c4c4;
+}
+
+/* profileEditSupportLISTTicket css end ************************************************************** */
+
+
+/* admin dashboard section start ************************* *********/
+
+.dashboardSection{
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.dashboardTitle{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #0a58ca !important;
+  text-align: left;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+
+
+
+
+
+/* admin dashboard section end ************************* *********/
+
+
+
+
+
+
+
 
 /* media queries  */
 @media (max-width: 1024px) {
@@ -1905,6 +2386,30 @@ border-bottom: 1px solid #B6030C ; */
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
+  }
+}
+@media (max-width: 475px) {
+  .blackboxHeroSlider {
+    position: absolute;
+    bottom: 91px;
+    left: 0%;
+    width: 200px;
+    height: 147px;
+    padding: 20px;
+  }
+  .blackboxH1 {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .blackboxPara {
+    font-size: 9px;
+    line-height: 19px;
+  }
+  .probtn {
+    padding: 10px 7px;
+    font-weight: 500;
+    font-size: 12px;
+   
   }
 }
 @media (max-width: 360px) {

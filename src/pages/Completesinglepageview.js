@@ -7,15 +7,24 @@ const Completesinglepageview = () => {
   return (
     <>
       <Menu />
-      <section className="">
+      <section className="dashboardTabs">
         <div className="container">
           <div className="d-lg-flex  flex-lg-row  d-sm-flex flex-sm-column">
-            <div className="tabsCustomer ">dashboard</div>
+            <div className="tabsCustomer ">
+              <img src="./img/DashboardBlack.png" alt="img" /> &nbsp; dashboard
+            </div>
 
-            <div className="tabsCustomer tabcusActive">My Project</div>
-            <div className="tabsCustomer">Messages</div>
-            <div className="tabsCustomer">Post a job</div>
-            <div className="tabsCustomer">Find Master</div>
+            <div className="tabsCustomer tabcusActive">
+              {" "}
+              <img src="./img/MyProjectsred.png" alt="img" /> &nbsp; My Project
+            </div>
+            <div className="tabsCustomer">
+              <img src="./img/Vectormsg.png" alt="img" /> &nbsp; Messages
+            </div>
+            <div className="tabsCustomer">
+              <img src="./img/FindProfessionals.png" alt="img" />&nbsp;Find
+              Professional
+            </div>
           </div>
         </div>
       </section>
@@ -121,10 +130,8 @@ const Completesinglepageview = () => {
 
               <div className="projectAwarded mt-3">
                 <div className="container">
-                  <h1 className="boxComplete-h1">Project Title</h1>
-                  <p className="boxComplete-Para">
-                    Status : <span>--</span>
-                  </p>
+                  <h1 className="boxComplete-h1">Project Awarded</h1>
+                 
                   <p className="boxComplete-Para">
                     Amount : <span>$ 600</span>
                   </p>

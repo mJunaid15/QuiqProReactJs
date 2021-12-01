@@ -9,11 +9,11 @@ const Footer = () => {
         style={{ background: "#2D408E" }}
       >
         <div className="container ">
-          <div className="row">
+          <div className="row ">
             <div className="col-md-3 mx-auto mt-3">
               <img src="./img/footerLogo.png" alt="footerlogo" />
 
-              <div className="row g-0 my-2">
+              <div className="row g-0 mt-4">
                 <div className="col-1 col-md-3 col-lg-3">
                   <a href="#" className="text-decoration-none">
                     <img src="./img/linkedin-in.png" alt="linkendlogo" />
@@ -35,11 +35,24 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
+              <div className="row g-0 mt-4 ">
+                <div className="col-12 mt-sm-3 col-md-12 col-lg-12 ">
+                  <a href="#" className="text-decoration-none">
+                  <img src="./img/appstore.png" alt="storeapp" />
+                  </a>
+                </div>
+                <div className="col-12 mt-sm-3 col-md-12 col-lg-12">
+                  <a href="#" className="text-decoration-none">
+                  <img src="./img/playstore.png" alt="storeapp" />
+                  </a>
+                </div>{" "}
+               
+              </div>
             </div>
 
             <hr className="clearfix w-100 d-md-none" />
 
-            <div className="col-md-3 mx-auto">
+            <div className="col-md-2 mx-auto">
               <h5 className="text-uppercase mt-3 mb-4">about</h5>
 
               <ul className="list-unstyled">
@@ -60,6 +73,47 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+
+            <hr className="clearfix w-100 d-md-none" />
+            <div className="col-md-2 mx-auto">
+              <h5 className="text-uppercase mt-3 mb-4">customer</h5>
+
+              <ul className="list-unstyled">
+                <li>
+                  <a href="#!">Service Near me</a>
+                </li>
+                <li>
+                  <a href="#!">Client Policy</a>
+                </li>
+              
+               
+              </ul>
+            </div>
+
+            <hr className="clearfix w-100 d-md-none" />
+            <div className="col-md-2  mx-auto ">
+             
+
+            <h5 className="font-weight-bold text-uppercase mt-3 mb-4">
+                Professional
+              </h5>
+
+              <ul className="list-unstyled">
+                <li>
+                  <a href="#!">Sign Up As a Professional</a>
+                </li>
+                <li>
+                  <a href="#!">Professional Policies</a>
+                </li>
+                <li>
+                  <a href="#!">Community Guidline</a>
+                </li>
+               
+                
+              </ul>
+            </div>
+
+           
 
             <hr className="clearfix w-100 d-md-none" />
 
@@ -85,22 +139,6 @@ const Footer = () => {
                   <a href="#!">Estate Planning</a>
                 </li>
               </ul>
-            </div>
-
-            <hr className="clearfix w-100 d-md-none" />
-
-            <div className="col-md-3 my-auto mx-auto text-lg-center">
-              <div className="row">
-                <div className="col-12 mb-sm-2">
-                  <img src="./img/appstore.png" alt="storeapp" />
-                </div>
-              </div>
-
-              <div className="row">
-                <div className="col-12">
-                  <img src="./img/playstore.png" alt="storeapp" />
-                </div>
-              </div>
             </div>
           </div>
         </div>

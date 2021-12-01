@@ -3,8 +3,7 @@ import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 import Rating from "@mui/material/Rating";
 
-
-const Postedviewwithsingleproposal = () => {
+const Postedprojectsingleviewwithsinglepurposal = () => {
   return (
     <>
       <Menu />
@@ -43,7 +42,7 @@ const Postedviewwithsingleproposal = () => {
                 Category name: <br /> <span>Posting time here</span>
               </p>
               <p className="boxComplete-para2">
-              Project Requirments : <br />
+                Project Requirments : <br />
                 <span className="postedSpanPara">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -57,8 +56,12 @@ const Postedviewwithsingleproposal = () => {
               </p>
             </div>
 
-            <div className="boxRightPostedProject ">
+            <div className="boxRightPostedProjectAuto ">
               <div>
+                <div className="w-100 d-flex justify-content-end my-3">
+                  <button className="btnProfileEdit me-4">Revoke </button>
+                </div>
+
                 <p className="boxComplete-Para">
                   Price: <span>Fixed</span>
                 </p>
@@ -105,38 +108,34 @@ const Postedviewwithsingleproposal = () => {
               <p className="Postedporject-Para">
                 Attachment: <span>2</span>
               </p>
-            
             </div>
             <div className="boxRightPostedProject ">
               <div>
-              <div className="">
-                <img
-                  src="./img/CreditsReview.png "
-                  alt="img"
-                  className="img-fluid bordrImg  "
-                />
-                <h1 className="proH1">Professional Name</h1>
-                <h2 className="proH2">About the client</h2>
-                <Rating name="size-small" defaultValue={2} size="small" />
-                <p className="proPara">Area/ City: <br />
-                <span>city name.</span>
-                </p>
-                <p className="proPara">Job Completed: <br />
-                <span>53.</span>
-                </p>
-                <div className=" d-flex ">
-                <button className="btnProfileEdit me-4">Award </button>
-                <button className="btnProfileEdit me-4">Pass </button>
-              </div>
-                
-
-
-              </div>
+                <div className="">
+                  <img
+                    src="./img/CreditsReview.png "
+                    alt="img"
+                    className="img-fluid bordrImg  "
+                  />
+                  <h1 className="proH1">Professional Name</h1>
+                  <h2 className="proH2">About the client</h2>
+                  <Rating name="size-small" defaultValue={2} size="small" />
+                  <p className="proPara">
+                    Area/ City: <br />
+                    <span>city name.</span>
+                  </p>
+                  <p className="proPara">
+                    Job Completed: <br />
+                    <span>53.</span>
+                  </p>
+                  <div className=" d-flex ">
+                    <button className="btnProfileEdit me-4">Complete </button>
+                    <button className="btnProfileEdit me-4">Chat </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          
         </div>
       </section>
 
@@ -145,4 +144,4 @@ const Postedviewwithsingleproposal = () => {
   );
 };
 
-export default Postedviewwithsingleproposal;
+export default Postedprojectsingleviewwithsinglepurposal;
