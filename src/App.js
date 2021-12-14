@@ -21,6 +21,18 @@ import Profileeditsuportlistticket from "./pages/Profileeditsuportlistticket";
 import Postedprojectsingleviewwithsinglepurposal from "./pages/Postedprojectsingleviewwithsinglepurposal";
 import Resetnewpass from "./pages/Resetnewpass";
 import Dashboard from "./admin dashboard/pages/Dashboard";
+import Adminmanagmentlist from "./admin dashboard/pages/Adminmanagmentlist";
+import Customermanagement from "./admin dashboard/pages/Customermanagement";
+import Professionalmanagementlist from "./admin dashboard/pages/Professionalmanagementlist";
+import Projectmanagementlist from "./admin dashboard/pages/Projectmanagementlist";
+import Categorylist from "./admin dashboard/pages/Categorylist";
+import Categorymanagementcreatecategory from "./admin dashboard/pages/Categorymanagementcreatecategory";
+import Categorymanagementsubcategorylist from "./admin dashboard/pages/Categorymanagementsubcategorylist";
+import Categorymanagementcreatesubcate from "./admin dashboard/pages/Categorymanagementcreatesubcate";
+import Supportmanagementlisttickets from "./admin dashboard/pages/Supportmanagementlisttickets";
+
+
+
 
 function App() {
   return (
@@ -96,6 +108,15 @@ function App() {
         ></Route>
         <Route exact path="/resetnewpass" component={Resetnewpass}></Route>
         <Route exact path="/dashboard" component={Dashboard}></Route>
+        <Route exact path="/adminmanagmentlist" component={Adminmanagmentlist}></Route>
+        <Route exact path="/customermanagement" component={Customermanagement}></Route>
+        <Route exact path="/professionalmanagementlist" component={Professionalmanagementlist}></Route>
+        <Route exact path="/projectmanagementlist" component={Projectmanagementlist}></Route>
+        <Route exact path="/categorylist" component={Categorylist}></Route>
+        <Route exact path="/categorymanagementcreatecategory" component={Categorymanagementcreatecategory}></Route>
+        <Route exact path="/categorymanagementsubcategorylist" component={Categorymanagementsubcategorylist}></Route>
+        <Route exact path="/supportmanagementlisttickets" component={Supportmanagementlisttickets}></Route>
+
 
         <Route component={Error}></Route>
       </Switch>

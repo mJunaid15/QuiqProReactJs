@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Comic+Neue:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 /* header css  */
 
@@ -2163,15 +2164,14 @@ label[data-shrink="false"]
 
 /* profileEditSupportLISTTicket css end ************************************************************** */
 
-
 /* admin dashboard section start ************************* *********/
 
-.dashboardSection{
+.dashboardSection {
   width: 95%;
   max-width: 1440px;
   margin: 0 auto;
 }
-.dashboardTitle{
+.dashboardTitle {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -2180,34 +2180,263 @@ label[data-shrink="false"]
   color: #000000;
 }
 .accordion-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 1rem 1.25rem;
-  font-size: 1rem;
-  color: #0a58ca !important;
-  text-align: left;
   background-color: transparent !important;
   box-shadow: none !important;
-  border: 0;
-  border-radius: 0;
-  overflow-anchor: none;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+.dbTitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  /* color: #2D408E; */
+}
+.dbTitle img {
+  padding-right: 10px;
+}
+.dbPara {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  font-feature-settings: "case" on;
+
+  color: #2d408e;
+}
+.defaultDashboardbtn {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  padding: 10px 20px;
+}
+.userNameSection {
+  padding: 20px 10px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(187, 222, 251, 0.1);
+  border-radius: 5px;
+}
+.userNAmeTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 14px;
+  margin-bottom: 0;
+  color: #2d408e;
+}
+.counterLitePara {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #868686;
+}
+.counter {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #000000;
+}
+.totalCustomerSection {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(187, 222, 251, 0.2);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px 0;
+}
+.recentTicketsSection {
+  padding: 30px 0;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(187, 222, 251, 0.25);
+  border-radius: 15px;
+}
+.recenTtickets {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* Black */
+
+  color: #22242c;
 }
 
+.seeAllText {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  cursor: pointer;
+  color: #2d408e;
+}
+.circleRecenttask {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+.circleRecentPara {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  /* Black */
+  cursor: pointer;
+  color: #22242c;
+}
+.timeLite {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* Gray */
+
+  color: #8e8ea1;
+}
+.recentTicketsRow {
+  padding: 20px 10px;
+}
+.recentTicketsRowgrey {
+  background-color: #f5f5f5;
+}
+.showing15 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  /* Gray */
+
+  color: #8e8ea1;
+}
+.karenHop {
+  padding: 0 10px;
+}
+.dashboardViewMore {
+  background: #f5f5f5;
+  border-radius: 40px;
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  color: #2d408e;
+}
+.adminNavigation {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+  margin-bottom: 0;
+
+  color: #c4c4c4;
+}
+.listofadmin{
+  font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+
+color: #2D408E;
+
+}
+
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+.styled-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid rgba(128, 128, 128, 0.151);
+}
+.styled-checkbox:hover + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+
+}
+.styled-checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.styled-checkbox:checked + label:before {
+  background: #2D408E;
+}
+.styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.styled-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+.adminName{
+  font-style: normal;
+font-weight: 300;
+font-size: 14px ;
+line-height: 17px;
+color: #22242C;
+}
+.registertitle{
+  font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
 
 
+/* Black */
 
+color: #22242C;
+}
+.marchTitle{
+  font-weight: normal;
+font-size: 14px;
+line-height: 17px;
 
+/* Gray */
+
+color: #8E8EA1;
+}
+.verifyTitle{
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+
+color: #2A9F5B;
+
+}
+.categoryCreateform{
+  width: 80%;
+}
 /* admin dashboard section end ************************* *********/
-
-
-
-
-
-
-
 
 /* media queries  */
 @media (max-width: 1024px) {
@@ -2348,6 +2577,9 @@ label[data-shrink="false"]
   }
 }
 @media (max-width: 768px) {
+  .categoryCreateform{
+    width: 100%;
+  }
   .herobgPro {
     height: 49vh;
   }
@@ -2409,7 +2641,6 @@ label[data-shrink="false"]
     padding: 10px 7px;
     font-weight: 500;
     font-size: 12px;
-   
   }
 }
 @media (max-width: 360px) {

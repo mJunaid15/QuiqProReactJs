@@ -11,7 +11,7 @@ const Navmenu = () => {
   const [Dropdown, setDropdown] = useState(false);
   return (
     <>
-      <Navbar bg="" expand="lg" style={{boxShadow: "0px 4px 4px rgba(187, 222, 251, 0.1)"}}>
+      <Navbar bg="" expand="lg" style={{boxShadow: "0px 4px 4px rgba(187, 222, 251, 0.1)",padding:"10px"}}>
         <div className="container-fluid">
           <Navbar.Brand href="#home">
             <h5 className="dashboardTitle">dashboard</h5>
@@ -32,7 +32,7 @@ const Navmenu = () => {
                       <input
                         type="email"
                         className="form-control inputcusFilter"
-                        placeholder="Search by skills"
+                        placeholder="Search "
                         id="exampleInputPassword1"
                       />
                      
@@ -192,7 +192,7 @@ const Navmenu = () => {
                     }}
                   >
                     <Avatar alt="Remy Sharp" src="./img/Oval.png" />
-                    <KeyboardArrowDownIcon style={{ color: "grey" }} />
+                  
                   </div>
                 </Button>
                 {Dropdown ? (
